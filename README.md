@@ -61,3 +61,10 @@ Of course, you can always ask the TA for help!  However, learning how to find th
 
 ## How to Submit
 Create your flutter project inside this folder, commit, and then push your code to this repository to submit your lab assignment.
+
+## Extending
+To extend this lab, you will need to add some additional features:
+
+- If you haven't already, create a set of icon buttons on the app bar to zoom in/out, using the `mapController`.
+
+- When generating the `Polyline`, instead of connecting markers in the order in which they were generated, create a graph of the shortest path to each marker starting from the marker closest to the device's current location.
