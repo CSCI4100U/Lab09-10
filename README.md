@@ -73,4 +73,6 @@ To extend this lab, you will need to add some additional features:
 
 - Add a new value associated with each marker which indicates a timestamp. Then, add a button that generates the polyline to connect each marker in timestamp order. Next, color each line between markers based on the average speed in that interval (green = fastest speed between markers, red = slowest).
 
+- Use the data to present statistics to the user including total distance traveled, calories burned, and average speed.
+
 - Add one more feature of your choice other than those listed here. Mention this feature explicitly in your README.md.
