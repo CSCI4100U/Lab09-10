@@ -75,4 +75,4 @@ To extend this lab, you will need to add some additional features:
 
 - Use the data to present statistics to the user including total distance traveled, calories burned, and average speed.
 
-- Add one more feature of your choice other than those listed here. Mention this feature explicitly in your README.md.
+- Add __two__ more features of your choice other than those listed here. Mention this feature explicitly in your README.md.
