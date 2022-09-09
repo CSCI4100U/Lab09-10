@@ -10,12 +10,12 @@ _**Note:** This lab is designed to take 2 weeks, and will be worth the value of 
 The floating action button will cause the current location to be recorded, and its address/location name looked up using geocoding.  A `FlutterMap` will display all recorded points, both as a polyline connecting them (in order), and using a map marker.
 
 ### The Map
-First, you will need a class to store the data for the stored points (`Location`):
+First, you will need a class to store the data for the stored points (`GeoLocation`):
 - `name` (`String` place name, using geocoding)
 - `address` (`String` street number and street name, using geocoding)
 - `latlng` (using the `LatLng` class, storing the geolocation coordinates)
 
-Create a placeholder array of such `Location` objects, and use that for the data for your map's polyline and markers.
+Create a placeholder array of such `GeoLocation` objects, and use that for the data for your map's polyline and markers.
 
 Optionally, you can create a set of icon buttons on the app bar to zoom in/out, using the `mapController`.  You can use the CTRL key and the mouse to zoom, but this may be easier to control.  This was done in the screenshot, below, but isn't required for full marks.
 
@@ -34,8 +34,8 @@ The floating action button for the app will do the following:
 - Use the geolocator plug-in to obtain the placemark for the current position, which will contain:
     - `name`:  `placemark.name`
     - `address`:  `placemark.subThoroughfare`, a space, then `placemark.thoroughfare`
-- Create a new instance of Location
-- Add this new Location to the list
+- Create a new instance of GeoLocation
+- Add this new GeoLocation to the list
 
 The data should now be dynamic.  You can enter different GPS coordinates using the settings of the emulator, if you want to test it out.  You can also download and use a GPX/KML file, which contains a list of geolocation coordinates.  This is what was done for the screenshot.  Alternatively, you can use a physical device.
 
