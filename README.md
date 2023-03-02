@@ -75,4 +75,6 @@ To extend this lab, you will need to add some additional features:
 
 - Use the data to present statistics to the user including total distance traveled, calories burned, and average speed.
 
-- Add __two__ more features of your choice other than those listed here. Mention both features explicitly in your README.md.
+- Add one more feature of your choice other than those listed here. Mention that feature explicitly in your README.md.
+
+  - As a baseline, your feature should be at least as complex as creating an SQLite database to store the data for different sets of markers, and allow the user to retrieve any previously stored path and display it.
