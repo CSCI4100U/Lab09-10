@@ -65,16 +65,16 @@ Create your flutter project inside this folder, commit, and then push your code 
 ## Extending
 To extend this lab, you will need to add some additional features:
 
-- If you haven't already, create a set of icon buttons on the app bar to zoom in/out, using the `mapController`.
+- (1 mark) If you haven't already, create a set of icon buttons on the app bar to zoom in/out, using the `mapController`.
 
-- Add a button to the appBar that, when generating the `Polyline`, instead of connecting markers in the order in which they were generated, creates a graph of the shortest path to each marker starting from the marker closest to the device's current location.
+- (3 marks) Add a button to the appBar that, when generating the `Polyline`, instead of connecting markers in the order in which they were generated, creates a graph of the shortest path to each marker starting from the marker closest to the device's current location.
 
-- Add a new value associated with each marker which indicates that point's elevation. Then, draw a rudimentary heatmap over the map based on that value for each marker, where 'high' values are 'hot' and 'low' values are 'cold'.  One way to do this is to draw a very small square at each grid coordinate, where the opacity of the square is proportional to the value for that location.  However, for this heatmap to look anywhere decent, the granularity of the grid needs to be pretty small.  This one is a bit tricky, but it is possible to draw basic shapes on a map overlay. If you don't like the appearance, you can use a color palette instead (red for hot/high values, blue for cold/low values).
+- (4 marks) Add a new value associated with each marker which indicates that point's elevation. Then, draw a rudimentary heatmap over the map based on that value for each marker, where 'high' values are 'hot' and 'low' values are 'cold'.  One way to do this is to draw a very small square at each grid coordinate, where the opacity of the square is proportional to the value for that location.  However, for this heatmap to look anywhere decent, the granularity of the grid needs to be pretty small.  This one is a bit tricky, but it is possible to draw basic shapes on a map overlay. If you don't like the appearance, you can use a color palette instead (red for hot/high values, blue for cold/low values).
 
-- Add a new value associated with each marker which indicates a timestamp. Then, add a button that generates the polyline to connect each marker in timestamp order. Next, color each line between markers based on the average speed in that interval (green = fastest speed between markers, red = slowest).
+- (3 marks) Add a new value associated with each marker which indicates a timestamp. Then, add a button that generates the polyline to connect each marker in timestamp order. Next, color each line between markers based on the average speed in that interval (green = fastest speed between markers, red = slowest).
 
-- Use the data to present statistics to the user including total distance traveled, calories burned, and average speed.
+- (2 marks) Use the data to present statistics to the user including total distance traveled, calories burned, and average speed.
 
-- Add one more feature of your choice other than those listed here. Mention that feature explicitly in your README.md.
+- (2 marks) Add one more feature of your choice other than those listed here. Mention that feature explicitly in your README.md.
 
   - As a baseline, your feature should be at least as complex as creating an SQLite database to store the data for different sets of markers, and allow the user to retrieve any previously stored path and display it.
